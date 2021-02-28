@@ -12,9 +12,10 @@
         <module>objects</module>
         <module>operators</module>
         <module>onjava</module>
-      <module>control</module>
+        <module>control</module>
         <module>housekeeping</module>
         <module>hiding</module>
+        <module>reuse</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
