@@ -39,6 +39,7 @@
         <module>javadoc</module>
         <module>lowlevel</module>
         <module>newio</module>
+        <module>serialization</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
