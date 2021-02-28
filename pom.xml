@@ -33,6 +33,7 @@
         <module>annotations</module>
         <module>concurrent</module>
         <module>patterns</module>
+        <module>collectiontopics</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
