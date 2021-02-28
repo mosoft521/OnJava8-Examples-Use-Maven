@@ -16,6 +16,7 @@
         <module>housekeeping</module>
         <module>hiding</module>
         <module>reuse</module>
+        <module>polymorphism</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
