@@ -24,6 +24,7 @@
         <module>functional</module>
         <module>streams</module>
         <module>exceptions</module>
+        <module>validating</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
@@ -41,6 +42,12 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.13.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>5.7.1</version>
                 <scope>test</scope>
             </dependency>
 

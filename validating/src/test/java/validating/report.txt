@@ -1,0 +1,114 @@
+testNullPut
+put() null item
+testCircularity
+in = 0, out = 0, full() = true, empty() = false, CircularQueue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+in = 0, out = 0, full() = false, empty() = true, CircularQueue = [null, null, null, null, null, null, null, null, null, null]
+in = 0, out = 0, full() = true, empty() = false, CircularQueue = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+in = 0, out = 0, full() = false, empty() = true, CircularQueue = [null, null, null, null, null, null, null, null, null, null]
+testFull
+in = 5, out = 0, full() = false, empty() = false, CircularQueue = [0, 1, 2, 3, 4, null, null, null, null, null]
+0
+1
+put() into full CircularQueue
+in = 2, out = 2, full() = true, empty() = false, CircularQueue = [10, 11, 2, 3, 4, 5, 6, 7, 8, 9]
+testEmpty
+0
+1
+2
+3
+4
+get() from empty CircularQueue
+in = 5, out = 5, full() = false, empty() = true, CircularQueue = [null, null, null, null, null, null, null, null, null, null]
+>>> Starting CountedListTest
+CountedList #0
+Set up for 0
+Running testAddAll()
+Cleaning up 0
+CountedList #1
+Set up for 1
+Running testInsert()
+Cleaning up 1
+CountedList #2
+Set up for 2
+Running testRemove()
+Cleaning up 2
+CountedList #3
+Set up for 3
+Running testOrder()
+Cleaning up 3
+CountedList #4
+Set up for 4
+Running testReplace()
+Cleaning up 4
+>>> Finished CountedListTest
+>>> Starting DynamicStringInverterTests <<<
+Inverter1: Disallowed characters
+Success
+Inverter2: Disallowed characters
+Success
+Inverter3: Disallowed characters
+Success
+Inverter4: Disallowed characters
+Bad characters: ;-_()*&^%$#@!~`0123456789
+Inverter1: Length must be less than 31 (should succeed)
+Success
+Inverter2: Length must be less than 31 (should succeed)
+Success
+Inverter3: Length must be less than 31 (should succeed)
+Success
+Inverter4: Length must be less than 31 (should succeed)
+Success
+Inverter1: Basic inversion (should succeed)
+FAIL: Exit, Pursued by a Bear. != eXIT, pURSUED BY A bEAR.
+Inverter2: Basic inversion (should succeed)
+Success
+Inverter3: Basic inversion (should succeed)
+Success
+Inverter4: Basic inversion (should succeed)
+Success
+Inverter1: Basic inversion (should fail)
+Success
+Inverter2: Basic inversion (should fail)
+FAIL: x != X
+Inverter3: Basic inversion (should fail)
+FAIL: x != X
+Inverter4: Basic inversion (should fail)
+FAIL: x != X
+Inverter1: Length must be less than 31 (throws exception)
+Success
+Inverter2: Length must be less than 31 (throws exception)
+Success
+Inverter3: Length must be less than 31 (throws exception)
+Exception: argument too long!
+Inverter4: Length must be less than 31 (throws exception)
+Exception: argument too long!
+Inverter1: Allowed characters (should succeed)
+Exception: expected: <abcdefghijklmnopqrstuvwxyz ,.> but was: <ABCDEFGHIJKLMNOPQRSTUVWXYZ ,.>
+Inverter2: Allowed characters (should succeed)
+Success
+Inverter3: Allowed characters (should succeed)
+Success
+Inverter4: Allowed characters (should succeed)
+Success
+>>> Finished DynamicStringInverterTests <<<
+>>> StringInverterTests <<<
