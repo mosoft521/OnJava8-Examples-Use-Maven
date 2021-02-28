@@ -22,6 +22,7 @@
         <module>collections</module>
         <module>typeinfo</module>
         <module>functional</module>
+        <module>streams</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
