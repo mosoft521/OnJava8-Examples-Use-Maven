@@ -12,6 +12,7 @@
         <module>objects</module>
         <module>operators</module>
         <module>onjava</module>
+      <module>control</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
