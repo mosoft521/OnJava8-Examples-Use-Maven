@@ -31,6 +31,7 @@
         <module>arrays</module>
         <module>enums</module>
         <module>annotations</module>
+        <module>concurrent</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
