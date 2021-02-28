@@ -19,6 +19,8 @@
         <module>polymorphism</module>
         <module>interfaces</module>
         <module>innerclasses</module>
+        <module>collections</module>
+        <module>typeinfo</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
