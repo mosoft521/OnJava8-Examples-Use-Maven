@@ -1,0 +1,18 @@
+// functional/Closure9.java
+// (c)2021 MindView LLC: see Copyright.txt
+// We make no guarantees that this code is fit for any purpose.
+// Visit http://OnJava8.com for more book information.
+// {WillNotCompile}
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Supplier;
+
+public class Closure9 {
+    Supplier<List<Integer>> makeFun() {
+        List<Integer> ai = new ArrayList<>();
+        ai = new ArrayList<>(); // Reassignment
+//        return () -> ai;//
+        return null;
+    }
+}

@@ -21,6 +21,7 @@
         <module>innerclasses</module>
         <module>collections</module>
         <module>typeinfo</module>
+        <module>functional</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
