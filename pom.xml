@@ -43,6 +43,7 @@
         <module>references</module>
         <module>standardio</module>
         <module>equalshashcode</module>
+        <module>staticchecking</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
