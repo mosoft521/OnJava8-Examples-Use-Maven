@@ -41,6 +41,7 @@
         <module>newio</module>
         <module>serialization</module>
         <module>references</module>
+        <module>standardio</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
