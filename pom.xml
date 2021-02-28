@@ -18,6 +18,7 @@
         <module>reuse</module>
         <module>polymorphism</module>
         <module>interfaces</module>
+        <module>innerclasses</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
