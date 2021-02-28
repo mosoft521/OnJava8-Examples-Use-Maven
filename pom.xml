@@ -34,6 +34,7 @@
         <module>concurrent</module>
         <module>patterns</module>
         <module>collectiontopics</module>
+        <module>compression</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
