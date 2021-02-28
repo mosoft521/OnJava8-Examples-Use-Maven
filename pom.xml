@@ -26,6 +26,8 @@
         <module>exceptions</module>
         <module>validating</module>
         <module>files</module>
+        <module>strings</module>
+        <module>generics</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
