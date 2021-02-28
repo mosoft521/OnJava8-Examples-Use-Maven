@@ -30,6 +30,7 @@
         <module>generics</module>
         <module>arrays</module>
         <module>enums</module>
+        <module>annotations</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
