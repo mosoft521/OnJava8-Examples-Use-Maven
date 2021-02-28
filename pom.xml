@@ -17,6 +17,7 @@
         <module>hiding</module>
         <module>reuse</module>
         <module>polymorphism</module>
+        <module>interfaces</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
