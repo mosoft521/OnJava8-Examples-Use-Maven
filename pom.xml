@@ -23,6 +23,7 @@
         <module>typeinfo</module>
         <module>functional</module>
         <module>streams</module>
+        <module>exceptions</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
