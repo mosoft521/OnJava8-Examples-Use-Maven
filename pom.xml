@@ -28,6 +28,7 @@
         <module>files</module>
         <module>strings</module>
         <module>generics</module>
+        <module>arrays</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
