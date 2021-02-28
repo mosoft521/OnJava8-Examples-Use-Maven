@@ -13,6 +13,7 @@
         <module>operators</module>
         <module>onjava</module>
       <module>control</module>
+        <module>housekeeping</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
