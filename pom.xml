@@ -32,6 +32,7 @@
         <module>enums</module>
         <module>annotations</module>
         <module>concurrent</module>
+        <module>patterns</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
