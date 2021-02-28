@@ -1,0 +1,33 @@
+// iostreams/BasicFileOutput.java
+// (c)2021 MindView LLC: see Copyright.txt
+// We make no guarantees that this code is fit for any purpose.
+// Visit http://OnJava8.com for more book information.
+// {VisuallyInspectOutput}
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringReader;
+
+public class BasicFileOutput {
+    static String file = "BasicFileOutput.dat";
+
+    public static void main(String[] args) {
+        try (
+                BufferedReader in = new BufferedReader(
+                        new StringReader(
+                                BufferedInputFile.read(
+                                        "BasicFileOutput.java")));
+                PrintWriter out = new PrintWriter(
+                        new BufferedWriter(new FileWriter(file)))
+        ) {
+            in.lines().forEach(out::println);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        // Show the stored file:
+        System.out.println(BufferedInputFile.read(file));
+    }
+}

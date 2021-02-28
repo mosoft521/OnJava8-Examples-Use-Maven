@@ -35,6 +35,7 @@
         <module>patterns</module>
         <module>collectiontopics</module>
         <module>compression</module>
+        <module>iostreams</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
