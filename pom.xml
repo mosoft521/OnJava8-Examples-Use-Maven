@@ -36,6 +36,7 @@
         <module>collectiontopics</module>
         <module>compression</module>
         <module>iostreams</module>
+        <module>javadoc</module>
     </modules>
 
     <name>OnJava8-Examples-Use-Maven</name>
