@@ -28,8 +28,8 @@ class Prioritized implements Comparable<Prioritized> {
 
     @Override
     public int compareTo(Prioritized arg) {
-        return priority < arg.priority ? 1 :
-                (priority > arg.priority ? -1 : 0);
+        return priority < arg.priority ? -1 :
+                (priority == arg.priority ? 0 : 1);
     }
 
     @Override
@@ -49,7 +49,7 @@ class Prioritized implements Comparable<Prioritized> {
 
     public static class EndSentinel extends Prioritized {
         EndSentinel() {
-            super(-1);
+            super(Integer.MAX_VALUE);
         }
     }
 }
