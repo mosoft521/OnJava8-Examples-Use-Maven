@@ -114,42 +114,42 @@ public class PriorityBlockingQueueDemo {
     }
 }
 /* Output:
-[15] Prioritized 1
-[17] Prioritized 0
-[17] Prioritized 5
-[16] Prioritized 6
-[14] Prioritized 9
-[12] Prioritized 2
-[11] Prioritized 4
-[11] Prioritized 12
-[13] Prioritized 13
-[12] Prioritized 16
-[14] Prioritized 17
-[15] Prioritized 23
-[18] Prioritized 26
-[16] Prioritized 29
-[12] Prioritized 18
-[11] Prioritized 30
-[11] Prioritized 24
+[0] Prioritized 8
+[0] Prioritized 19
+[0] Prioritized 21
+[0] Prioritized 14
+[1] Prioritized 3
+[2] Prioritized 20
+[3] Prioritized 7
+[6] Prioritized 31
+[8] Prioritized 10
+[8] Prioritized 11
+[8] Prioritized 25
 [10] Prioritized 15
 [10] Prioritized 22
-[8] Prioritized 25
-[8] Prioritized 11
-[8] Prioritized 10
-[6] Prioritized 31
-[3] Prioritized 7
-[2] Prioritized 20
-[1] Prioritized 3
-[0] Prioritized 19
-[0] Prioritized 8
-[0] Prioritized 14
-[0] Prioritized 21
-[-1] Prioritized 28
-(0:17)(1:15)(2:12)(3:1)(4:11)
+[11] Prioritized 12
+[11] Prioritized 24
+[11] Prioritized 4
+[11] Prioritized 30
+[12] Prioritized 17
+[12] Prioritized 1
+[12] Prioritized 16
+[13] Prioritized 13
+[14] Prioritized 9
+[14] Prioritized 18
+[15] Prioritized 23
+[15] Prioritized 2
+[16] Prioritized 29
+[16] Prioritized 6
+[17] Prioritized 0
+[17] Prioritized 5
+[18] Prioritized 26
+[2147483647] Prioritized 27
+(0:17)(1:12)(2:15)(3:1)(4:11)
 (5:17)(6:16)(7:3)(8:0)(9:14)
 (10:8)(11:8)(12:11)(13:13)(14:0)
-(15:10)(16:12)(17:14)(18:12)(19:0)
+(15:10)(16:12)(17:12)(18:14)(19:0)
 (20:2)(21:0)(22:10)(23:15)(24:11)
-(25:8)(26:18)(27:-1)(28:-1)(29:16)
-(30:11)(31:6)(32:-1)
+(25:8)(26:18)(27:2147483647)(28:2147483647)(29:16)
+(30:11)(31:6)(32:2147483647)
 */
