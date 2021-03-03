@@ -19,7 +19,7 @@ public class PathAnalysis {
     main(String[] args) throws IOException {
         System.out.println(System.getProperty("os.name"));
         Path p =
-                Paths.get("PathAnalysis.java").toAbsolutePath();
+                Paths.get("files/src/main/java/PathAnalysis.java").toAbsolutePath();
         say("Exists", Files.exists(p));
         say("Directory", Files.isDirectory(p));
         say("Executable", Files.isExecutable(p));
@@ -43,7 +43,7 @@ public class PathAnalysis {
     }
 }
 /* Output:
-Windows 8.1
+Windows 10
 Exists: true
 Directory: false
 Executable: true
@@ -52,10 +52,10 @@ RegularFile: true
 Writable: true
 notExists: false
 Hidden: false
-size: 1617
-FileStore: (C:)
-LastModified: : 2021-01-24T15:48:37.461504Z
-Owner: GROOT\Bruce (User)
-ContentType: null
+size: 2038
+FileStore: WORK (E:)
+LastModified: : 2021-03-03T01:34:15.966383Z
+Owner: DESKTOP-7QK0M3D\Alvin (User)
+ContentType: text/plain
 SymbolicLink: false
 */

@@ -29,7 +29,7 @@ public class AddAndSubtractPaths {
     public static void main(String[] args) {
         System.out.println(System.getProperty("os.name"));
         System.out.println(base);
-        Path p = Paths.get("AddAndSubtractPaths.java")
+        Path p = Paths.get("files/src/main/java/AddAndSubtractPaths.java")
                 .toAbsolutePath();
         show(1, p);
         Path convoluted = p.getParent().getParent()
@@ -56,31 +56,28 @@ public class AddAndSubtractPaths {
     }
 }
 /* Output:
-Windows 8.1
-C:\Git
-(1)r OnJava8\ExtractedExamples\files\AddAndSubtractPath
-s.java
-RealPath: C:\Git\OnJava8\ExtractedExamples\files\AddAnd
-SubtractPaths.java
-(2)r OnJava8\ExtractedExamples\strings\..\files
-RealPath: C:\Git\OnJava8\ExtractedExamples\files
-(3)r OnJava8\ExtractedExamples\files
-RealPath: C:\Git\OnJava8\ExtractedExamples\files
+Windows 10
+E:\
+(1)r ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java\AddAndSubtractPaths.java
+RealPath: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java\AddAndSubtractPaths.java
+(2)r ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\strings\..\java
+RealPath: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java
+(3)r ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java
+RealPath: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java
 (4)  ..\..
-RealPath: C:\Git\OnJava8
+RealPath: E:\
 (5)  ..\..
-RealPath: C:\Git\OnJava8
-(6)r OnJava8
-RealPath: C:\Git\OnJava8
-(7)r OnJava8\ExtractedExamples\files\.\..\..
-RealPath: C:\Git\OnJava8
-(8)r OnJava8
-RealPath: C:\Git\OnJava8
-(9)r OnJava8\ExtractedExamples\files
-RealPath: C:\Git\OnJava8\ExtractedExamples\files
-(10)r OnJava8\ExtractedExamples\strings
-RealPath: C:\Git\OnJava8\ExtractedExamples\strings
+RealPath: E:\
+(6)r
+RealPath: E:\
+(7)r ws_ij_alvin\OnJava8-Examples-Use-Maven\.\..\..
+RealPath: E:\
+(8)r
+RealPath: E:\
+(9)r ws_ij_alvin\OnJava8-Examples-Use-Maven
+RealPath: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven
+(10)r ws_ij_alvin\strings
+java.nio.file.NoSuchFileException: E:\ws_ij_alvin\strings
 (11)  nonexistent
-java.nio.file.NoSuchFileException:
-C:\Git\OnJava8\ExtractedExamples\files\nonexistent
+java.nio.file.NoSuchFileException: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\nonexistent
 */

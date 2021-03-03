@@ -10,7 +10,7 @@ public class PartsOfPaths {
     public static void main(String[] args) {
         System.out.println(System.getProperty("os.name"));
         Path p =
-                Paths.get("PartsOfPaths.java").toAbsolutePath();
+                Paths.get("files/src/main/java/PartsOfPaths.java").toAbsolutePath();
         for (int i = 0; i < p.getNameCount(); i++)
             System.out.println(p.getName(i));
         System.out.println("ends with '.java': " +
@@ -25,17 +25,21 @@ public class PartsOfPaths {
     }
 }
 /* Output:
-Windows 8.1
-Git
-OnJava8
-ExtractedExamples
+Windows 10
+ws_ij_alvin
+OnJava8-Examples-Use-Maven
 files
+src
+main
+java
 PartsOfPaths.java
 ends with '.java': false
-Git: false : false
-OnJava8: false : false
-ExtractedExamples: false : false
+ws_ij_alvin: false : false
+OnJava8-Examples-Use-Maven: false : false
 files: false : false
+src: false : false
+main: false : false
+java: false : false
 PartsOfPaths.java: false : true
-Starts with C:\ true
+Starts with E:\ true
 */
