@@ -12,7 +12,7 @@ public class TryWithResources {
     public static void main(String[] args) {
         try (
                 InputStream in = new FileInputStream(
-                        new File("TryWithResources.java"))
+                        new File("exceptions/src/main/java/TryWithResources.java"))
         ) {
             int contents = in.read();
             // Process contents

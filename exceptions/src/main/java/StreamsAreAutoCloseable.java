@@ -14,7 +14,7 @@ public class StreamsAreAutoCloseable {
     main(String[] args) throws IOException {
         try (
                 Stream<String> in = Files.lines(
-                        Paths.get("StreamsAreAutoCloseable.java"));
+                        Paths.get("exceptions/src/main/java/StreamsAreAutoCloseable.java"));
                 PrintWriter outfile = new PrintWriter(
                         "Results.txt");                         // [1]
         ) {

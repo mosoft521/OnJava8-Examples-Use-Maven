@@ -13,7 +13,7 @@ public class MessyExceptions {
         InputStream in = null;
         try {
             in = new FileInputStream(
-                    new File("MessyExceptions.java"));
+                    new File("exceptions/src/main/java/MessyExceptions.java"));
             int contents = in.read();
             // Process contents
         } catch (IOException e) {

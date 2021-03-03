@@ -17,8 +17,8 @@ public class InputFile2 {
 
     public static void
     main(String[] args) throws IOException {
-        new InputFile2("InputFile2.java").getLines()
-                .skip(15)
+        new InputFile2("exceptions/src/main/java/InputFile2.java").getLines()
+                .skip(18)
                 .limit(1)
                 .forEach(System.out::println);
     }
