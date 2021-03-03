@@ -31,7 +31,7 @@ public class PathInfo {
         System.out.println(System.getProperty("os.name"));
         info(Paths.get(
                 "C:", "path", "to", "nowhere", "NoFile.txt"));
-        Path p = Paths.get("PathInfo.java");
+        Path p = Paths.get("files/src/main/java/PathInfo.java");
         info(p);
         Path ap = p.toAbsolutePath();
         info(ap);
@@ -49,7 +49,7 @@ public class PathInfo {
     }
 }
 /* Output:
-Windows 8.1
+Windows 10
 toString: C:\path\to\nowhere\NoFile.txt
 Exists: false
 RegularFile: false
@@ -59,45 +59,42 @@ FileName: NoFile.txt
 Parent: C:\path\to\nowhere
 Root: C:\
 ******************
-toString: PathInfo.java
+toString: files\src\main\java\PathInfo.java
 Exists: true
 RegularFile: true
 Directory: false
 Absolute: false
 FileName: PathInfo.java
-Parent: null
+Parent: files\src\main\java
 Root: null
 ******************
-toString:
-C:\Git\OnJava8\ExtractedExamples\files\PathInfo.java
+toString: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java\PathInfo.java
 Exists: true
 RegularFile: true
 Directory: false
 Absolute: true
 FileName: PathInfo.java
-Parent: C:\Git\OnJava8\ExtractedExamples\files
-Root: C:\
+Parent: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java
+Root: E:\
 ******************
-toString: C:\Git\OnJava8\ExtractedExamples\files
+toString: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java
 Exists: true
 RegularFile: false
 Directory: true
 Absolute: true
-FileName: files
-Parent: C:\Git\OnJava8\ExtractedExamples
-Root: C:\
+FileName: java
+Parent: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main
+Root: E:\
 ******************
-toString:
-C:\Git\OnJava8\ExtractedExamples\files\PathInfo.java
+toString: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java\PathInfo.java
 Exists: true
 RegularFile: true
 Directory: false
 Absolute: true
 FileName: PathInfo.java
-Parent: C:\Git\OnJava8\ExtractedExamples\files
-Root: C:\
+Parent: E:\ws_ij_alvin\OnJava8-Examples-Use-Maven\files\src\main\java
+Root: E:\
 ******************
-URI: file:///C:/Git/OnJava8/ExtractedExamples/files/Pat
-hInfo.java
+URI: file:///E:/ws_ij_alvin/OnJava8-Examples-Use-Maven/files/src/main/java/PathInfo.java
 true
 */
