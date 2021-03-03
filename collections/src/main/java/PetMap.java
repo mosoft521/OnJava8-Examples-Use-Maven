@@ -3,7 +3,10 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
-import typeinfo.pets.*;
+import typeinfo.pets.Cat;
+import typeinfo.pets.Dog;
+import typeinfo.pets.Hamster;
+import typeinfo.pets.Pet;
 
 import java.util.HashMap;
 import java.util.Map;

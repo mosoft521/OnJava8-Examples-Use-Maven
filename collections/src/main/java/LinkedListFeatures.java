@@ -3,7 +3,10 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
-import typeinfo.pets.*;
+import typeinfo.pets.Hamster;
+import typeinfo.pets.Pet;
+import typeinfo.pets.PetCreator;
+import typeinfo.pets.Rat;
 
 import java.util.LinkedList;
 

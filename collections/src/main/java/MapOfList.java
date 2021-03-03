@@ -4,7 +4,13 @@
 // Visit http://OnJava8.com for more book information.
 // {java collections.MapOfList}
 
-import typeinfo.pets.*;
+import typeinfo.pets.Cat;
+import typeinfo.pets.Cymric;
+import typeinfo.pets.Dog;
+import typeinfo.pets.Mutt;
+import typeinfo.pets.Pet;
+import typeinfo.pets.Pug;
+import typeinfo.pets.Rat;
 
 import java.util.Arrays;
 import java.util.HashMap;

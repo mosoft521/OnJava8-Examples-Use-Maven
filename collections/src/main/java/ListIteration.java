@@ -3,7 +3,8 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
-import typeinfo.pets.*;
+import typeinfo.pets.Pet;
+import typeinfo.pets.PetCreator;
 
 import java.util.List;
 import java.util.ListIterator;
