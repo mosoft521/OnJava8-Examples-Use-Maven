@@ -18,6 +18,17 @@ public class InfiniteRecursion {
     @Override
     public String toString() {
         return
-                " InfiniteRecursion address: " + this + "\n";
+                " InfiniteRecursion address: " + this + "\n";//this ==> super.toString()
     }
 }
+/* Output:
+Exception in thread "main" java.lang.StackOverflowError
+	at java.lang.AbstractStringBuilder.ensureCapacityInternal(AbstractStringBuilder.java:125)
+	at java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:448)
+	at java.lang.StringBuilder.append(StringBuilder.java:136)
+	at InfiniteRecursion.toString(InfiniteRecursion.java:20)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at InfiniteRecursion.toString(InfiniteRecursion.java:20)
+	at java.lang.String.valueOf(String.java:2994)
+ */
