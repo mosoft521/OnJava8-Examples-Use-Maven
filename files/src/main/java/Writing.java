@@ -17,16 +17,16 @@ public class Writing {
         // Write bytes to a file:
         byte[] bytes = new byte[SIZE];
         rand.nextBytes(bytes);
-        Files.write(Paths.get("bytes.dat"), bytes);
-        System.out.println("bytes.dat: " +
-                Files.size(Paths.get("bytes.dat")));
+        Files.write(Paths.get("files/src/main/java/bytes.dat"), bytes);
+        System.out.println("files/src/main/java/bytes.dat: " +
+                Files.size(Paths.get("files/src/main/java/bytes.dat")));
 
         // Write an iterable to a file:
         List<String> lines = Files.readAllLines(
-                Paths.get("../streams/Cheese.dat"));
-        Files.write(Paths.get("Cheese.txt"), lines);
+                Paths.get("streams/src/main/java/Cheese.dat"));
+        Files.write(Paths.get("files/src/main/java/Cheese.txt"), lines);
         System.out.println("Cheese.txt: " +
-                Files.size(Paths.get("Cheese.txt")));
+                Files.size(Paths.get("files/src/main/java/Cheese.txt")));
     }
 }
 /* Output:
