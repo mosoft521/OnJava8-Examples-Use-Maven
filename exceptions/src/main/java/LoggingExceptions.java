@@ -15,7 +15,7 @@ class LoggingException extends Exception {
 
     LoggingException() {
         StringWriter trace = new StringWriter();
-        printStackTrace(new PrintWriter(trace));
+        printStackTrace(new PrintWriter(trace));//对比效果
         logger.severe(trace.toString());
     }
 }
@@ -35,17 +35,22 @@ public class LoggingExceptions {
     }
 }
 /* Output:
-___[ Error Output ]___
-Jan 24, 2021 8:48:54 AM LoggingException <init>
-SEVERE: LoggingException
-        at
-LoggingExceptions.main(LoggingExceptions.java:20)
+//注释掉效果：
+三月 03, 2021 4:18:27 下午 LoggingException <init>
+严重:
+Caught LoggingException
+三月 03, 2021 4:18:28 下午 LoggingException <init>
+严重:
+Caught LoggingException
+//打开注释效果：
+三月 03, 2021 4:18:55 下午 LoggingException <init>
+严重: LoggingException
+	at LoggingExceptions.main(LoggingExceptions.java:26)
 
 Caught LoggingException
-Jan 24, 2021 8:48:54 AM LoggingException <init>
-SEVERE: LoggingException
-        at
-LoggingExceptions.main(LoggingExceptions.java:25)
+三月 03, 2021 4:18:55 下午 LoggingException <init>
+严重: LoggingException
+	at LoggingExceptions.main(LoggingExceptions.java:31)
 
 Caught LoggingException
 */

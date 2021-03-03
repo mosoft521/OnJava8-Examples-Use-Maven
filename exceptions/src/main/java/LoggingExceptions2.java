@@ -15,7 +15,7 @@ public class LoggingExceptions2 {
 
     static void logException(Exception e) {
         StringWriter trace = new StringWriter();
-        e.printStackTrace(new PrintWriter(trace));
+        e.printStackTrace(new PrintWriter(trace));//对比效果
         logger.severe(trace.toString());
     }
 
@@ -28,9 +28,11 @@ public class LoggingExceptions2 {
     }
 }
 /* Output:
-___[ Error Output ]___
-Jan 24, 2021 8:48:54 AM LoggingExceptions2 logException
-SEVERE: java.lang.NullPointerException
-        at
-LoggingExceptions2.main(LoggingExceptions2.java:17)
+//注释掉效果：
+三月 03, 2021 4:22:24 下午 LoggingExceptions2 logException
+严重:
+//打开注释效果：
+三月 03, 2021 4:22:43 下午 LoggingExceptions2 logException
+严重: java.lang.NullPointerException
+	at LoggingExceptions2.main(LoggingExceptions2.java:24)
 */
