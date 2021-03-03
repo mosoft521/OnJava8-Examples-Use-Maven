@@ -34,7 +34,7 @@ public class StartEnd {
         for (String in : input.split("\n")) {
             System.out.println("input : " + in);
             for (String regex : new String[]{"\\w*ere\\w*",
-                    "\\w*ever", "T\\w+", "Never.*?!"})
+                    "\\w*ever", "T\\w+", "Never.*?!"})//Never.*?! 其中 *? 为勉强型量词
                 examine(in, regex);
         }
     }

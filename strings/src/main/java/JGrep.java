@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 // A very simple version of the "grep" program
 // {java JGrep
-// WhitherStringBuilder.java 'return|for|String'}
+// strings/src/main/java/WhitherStringBuilder.java return|for|String}
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
