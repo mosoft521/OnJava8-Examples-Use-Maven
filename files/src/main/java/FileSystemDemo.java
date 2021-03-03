@@ -31,20 +31,19 @@ public class FileSystemDemo {
     }
 }
 /* Output:
-Windows 8.1
-File Store: (C:)
-File Store: System Reserved (E:)
-File Store: (F:)
+Windows 10
+File Store: SYS (C:)
+File Store: PRO (D:)
+File Store: WORK (E:)
+File Store: BAK (F:)
 Root Directory: C:\
 Root Directory: D:\
 Root Directory: E:\
 Root Directory: F:\
 Separator: \
-UserPrincipalLookupService:
-sun.nio.fs.WindowsFileSystem$LookupService$1@19e0bfd
+UserPrincipalLookupService: sun.nio.fs.WindowsFileSystem$LookupService$1@1b6d3586
 isOpen: true
 isReadOnly: false
-FileSystemProvider:
-sun.nio.fs.WindowsFileSystemProvider@139a55
+FileSystemProvider: sun.nio.fs.WindowsFileSystemProvider@4554617c
 File Attribute Views: [owner, dos, acl, basic, user]
 */

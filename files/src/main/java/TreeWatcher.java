@@ -30,7 +30,7 @@ public class TreeWatcher {
                                 "evt.context(): " + evt.context() +
                                         "\nevt.count(): " + evt.count() +
                                         "\nevt.kind(): " + evt.kind());
-                        System.exit(0);
+                        System.exit(0);//退出系统，注释掉，才会出4个文件删除信息
                     }
                 } catch (InterruptedException e) {
                     return;

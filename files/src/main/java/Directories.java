@@ -58,7 +58,7 @@ public class Directories {
             Path variant = makeVariant();
             if (!Files.exists(variant)) {
                 Files.createDirectories(variant);
-                Files.copy(Paths.get("Directories.java"),
+                Files.copy(Paths.get("files/src/main/java/Directories.java"),
                         variant.resolve("File.txt"));
                 Files.createTempFile(variant, null, null);
             }

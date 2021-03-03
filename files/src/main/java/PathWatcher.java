@@ -27,7 +27,7 @@ public class PathWatcher {
                             f.toString().endsWith(".txt"))
                     .forEach(f -> {
                         try {
-                            System.out.println("deleting " + f);
+                        System.out.println("deleting " + f);
                             Files.delete(f);
                         } catch (IOException e) {
                             throw new RuntimeException(e);
@@ -38,8 +38,7 @@ public class PathWatcher {
         }
     }
 
-    public static void
-    main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
         Directories.refreshTestDir();
         Directories.populateTestDir();
         Files.createFile(test.resolve("Hello.txt"));
