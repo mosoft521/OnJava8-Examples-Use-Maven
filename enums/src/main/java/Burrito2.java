@@ -6,21 +6,27 @@
 
 import enums.SpicinessEnum;
 
-import static enums.SpicinessEnum.*;
+import static enums.SpicinessEnum.HOT;
+import static enums.SpicinessEnum.MEDIUM;
+import static enums.SpicinessEnum.NOT;
 
 public class Burrito2 {
-  SpicinessEnum degree;
-  public Burrito2(SpicinessEnum degree) {
-    this.degree = degree;
-  }
-  @Override public String toString() {
-    return "Burrito is "+ degree;
-  }
-  public static void main(String[] args) {
-    System.out.println(new Burrito2(NOT));
-    System.out.println(new Burrito2(MEDIUM));
-    System.out.println(new Burrito2(HOT));
-  }
+    SpicinessEnum degree;
+
+    public Burrito2(SpicinessEnum degree) {
+        this.degree = degree;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new Burrito2(NOT));
+        System.out.println(new Burrito2(MEDIUM));
+        System.out.println(new Burrito2(HOT));
+    }
+
+    @Override
+    public String toString() {
+        return "Burrito is " + degree;
+    }
 }
 /* Output:
 Burrito is NOT
