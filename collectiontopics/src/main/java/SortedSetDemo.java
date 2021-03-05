@@ -23,10 +23,15 @@ public class SortedSetDemo {
         System.out.println(low);
         System.out.println(high);
         Iterator<String> it = sortedSet.iterator();
-        for (int i = 0; i <= 6; i++) {
-            if (i == 3) low = it.next();
-            if (i == 6) high = it.next();
-            else it.next();
+        for (int i = 0; i <= 6; i++) {//这里bug了，3时，跳了2下
+            if (i == 3) {
+                low = it.next();
+                System.out.println("low: " + low);
+            }
+            if (i == 6) {
+                high = it.next();
+                System.out.println("high: " + high);
+            } else it.next();
         }
         System.out.println(low);
         System.out.println(high);
@@ -39,6 +44,8 @@ public class SortedSetDemo {
 [eight, five, four, one, seven, six, three, two]
 eight
 two
+low: one
+high: two
 one
 two
 [one, seven, six, three]
