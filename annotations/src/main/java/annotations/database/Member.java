@@ -3,7 +3,9 @@
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 package annotations.database;
-
+//查看编译后代码
+//javap -cp annotations\target\classes ^
+//-c annotations\target\classes\annotations\database\Member.class
 @DBTable(name = "MEMBER")
 public class Member {
     static int memberCount;

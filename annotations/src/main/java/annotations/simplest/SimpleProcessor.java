@@ -15,9 +15,14 @@ import javax.lang.model.element.ElementKind;
 import javax.lang.model.element.ExecutableElement;
 import javax.lang.model.element.TypeElement;
 import java.util.Set;
-
-@SupportedAnnotationTypes(
-        "annotations.simplest.Simple")
+//处理注解
+//javac -cp annotations\target\classes ^
+//-processor annotations.simplest.SimpleProcessor ^
+//annotations/src/main/java/annotations/simplest/SimpleTest.java
+//查看编译后代码
+//javap -cp annotations\target\classes ^
+//-c annotations\target\classes\annotations\simplest/SimpleTest.class
+@SupportedAnnotationTypes("annotations.simplest.Simple")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class SimpleProcessor
         extends AbstractProcessor {
