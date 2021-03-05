@@ -6,6 +6,7 @@
 
 import java.util.Objects;
 import java.util.WeakHashMap;
+import java.util.concurrent.TimeUnit;
 
 class Element {
     private String ident;
@@ -51,7 +52,7 @@ class Value extends Element {
 }
 
 public class CanonicalMapping {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         int size = 1000;
         // Or, choose size via the command line:
         if (args.length > 0)
@@ -67,5 +68,23 @@ public class CanonicalMapping {
             map.put(k, v);
         }
         System.gc();
+        TimeUnit.MILLISECONDS.sleep((int) (1000 * 5));
     }
 }
+/*
+Finalizing Key 215
+Finalizing Key 214
+Finalizing Key 212
+Finalizing Key 211
+Finalizing Key 209
+Finalizing Key 208
+Finalizing Key 206
+Finalizing Key 205
+Finalizing Key 203
+Finalizing Key 202
+Finalizing Key 200
+Finalizing Key 199
+Finalizing Key 197
+Finalizing Key 196
+...
+ */
