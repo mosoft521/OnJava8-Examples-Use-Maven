@@ -93,5 +93,5 @@ public class BufferToText {
 ????
 Decoded using windows-1252: Some text
 Some text
-Some textNULNULNUL
+Some text
 */
