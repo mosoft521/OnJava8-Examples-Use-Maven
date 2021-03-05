@@ -15,7 +15,7 @@ public class TestEOF {
         try (
                 DataInputStream in = new DataInputStream(
                         new BufferedInputStream(
-                                new FileInputStream("TestEOF.java")))
+                                new FileInputStream("iostreams/src/main/java/TestEOF.java")))
         ) {
             while (in.available() != 0)
                 System.out.write(in.readByte());

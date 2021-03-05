@@ -22,6 +22,6 @@ public class BufferedInputFile {
 
     public static void main(String[] args) {
         System.out.print(
-                read("BufferedInputFile.java"));
+                read("iostreams/src/main/java/BufferedInputFile.java"));
     }
 }

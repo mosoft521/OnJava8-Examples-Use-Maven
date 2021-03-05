@@ -16,7 +16,7 @@ public class FileOutputShortcut {
         try (
                 BufferedReader in = new BufferedReader(
                         new StringReader(BufferedInputFile.read(
-                                "FileOutputShortcut.java")));
+                                "iostreams/src/main/java/FileOutputShortcut.java")));
                 // Here's the shortcut:
                 PrintWriter out = new PrintWriter(file)
         ) {

@@ -15,7 +15,7 @@ public class FormattedMemoryInput {
                 DataInputStream in = new DataInputStream(
                         new ByteArrayInputStream(
                                 BufferedInputFile.read(
-                                        "FormattedMemoryInput.java")
+                                        "iostreams/src/main/java/FormattedMemoryInput.java")
                                         .getBytes()))
         ) {
             while (true)

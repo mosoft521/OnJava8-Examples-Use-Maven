@@ -19,7 +19,7 @@ public class BasicFileOutput {
                 BufferedReader in = new BufferedReader(
                         new StringReader(
                                 BufferedInputFile.read(
-                                        "BasicFileOutput.java")));
+                                        "iostreams/src/main/java/BasicFileOutput.java")));
                 PrintWriter out = new PrintWriter(
                         new BufferedWriter(new FileWriter(file)))
         ) {
