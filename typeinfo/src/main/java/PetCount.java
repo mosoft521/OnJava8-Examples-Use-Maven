@@ -1,11 +1,11 @@
-// typeinfo/PetCounter.java
+// typeinfo/PetCount.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 // Using instanceof
 
 import typeinfo.pets.Cat;
-import typeinfo.pets.Creator;
+import typeinfo.pets.PetCreator;
 import typeinfo.pets.Cymric;
 import typeinfo.pets.Dog;
 import typeinfo.pets.EgyptianMau;
@@ -21,14 +21,14 @@ import typeinfo.pets.Rodent;
 
 import java.util.HashMap;
 
-public class PetCounter {
+public class PetCount {
     private Counter counter = new Counter();
 
     public static void main(String[] args) {
-        new PetCounter().count(new ForNamePetCreator());
+        new PetCount().count(new ForNamePetCreator());
     }
 
-    private void countPet(Pet pet) {
+    private void countPets(Pet pet) {
         System.out.print(
                 pet.getClass().getSimpleName() + " ");
         if (pet instanceof Pet)
@@ -57,9 +57,9 @@ public class PetCounter {
             counter.count("Hamster");
     }
 
-    public void count(Creator creator) {
-        creator.stream().limit(20)
-                .forEach(pet -> countPet(pet));
+    public void count(PetCreator petCreator) {
+        petCreator.stream().limit(20)
+                .forEach(pet -> countPets(pet));
         System.out.println();
         System.out.println(counter);
     }

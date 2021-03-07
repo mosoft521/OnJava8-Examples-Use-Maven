@@ -1,13 +1,13 @@
-// typeinfo/PetCounter2.java
+// typeinfo/PetCount2.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.Pets;
 
-public class PetCounter2 {
+public class PetCount2 {
     public static void main(String[] args) {
-        new PetCounter().count(new PetCreator());
+        new PetCount().count(Pets.CREATOR);
     }
 }
 /* Output:

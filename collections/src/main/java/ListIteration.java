@@ -4,14 +4,14 @@
 // Visit http://OnJava8.com for more book information.
 
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
 import java.util.List;
 import java.util.ListIterator;
 
 public class ListIteration {
     public static void main(String[] args) {
-        List<Pet> pets = new PetCreator().list(8);
+        List<Pet> pets = new LiteralPetCreator().list(8);
         ListIterator<Pet> it = pets.listIterator();
         while (it.hasNext())
             System.out.println(it.next() +
@@ -26,7 +26,7 @@ public class ListIteration {
         it = pets.listIterator(3);
         while (it.hasNext()) {
             it.next();
-            it.set(new PetCreator().get());
+            it.set(new LiteralPetCreator().get());
         }
         System.out.println(pets);
     }

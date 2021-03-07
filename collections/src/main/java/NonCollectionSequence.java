@@ -4,12 +4,12 @@
 // Visit http://OnJava8.com for more book information.
 
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
 import java.util.Iterator;
 
 class PetSequence {
-    protected Pet[] pets = new PetCreator().array(8);
+    protected Pet[] pets = new LiteralPetCreator().array(8);
 }
 
 public class NonCollectionSequence extends PetSequence {

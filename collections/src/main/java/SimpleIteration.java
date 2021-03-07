@@ -4,14 +4,14 @@
 // Visit http://OnJava8.com for more book information.
 
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
 import java.util.Iterator;
 import java.util.List;
 
 public class SimpleIteration {
     public static void main(String[] args) {
-        List<Pet> pets = new PetCreator().list(12);
+        List<Pet> pets = new LiteralPetCreator().list(12);
         Iterator<Pet> it = pets.iterator();
         while (it.hasNext()) {
             Pet p = it.next();

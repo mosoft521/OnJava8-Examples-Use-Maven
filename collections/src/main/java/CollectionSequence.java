@@ -4,14 +4,14 @@
 // Visit http://OnJava8.com for more book information.
 
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
 import java.util.AbstractCollection;
 import java.util.Iterator;
 
 public class CollectionSequence
         extends AbstractCollection<Pet> {
-    private Pet[] pets = new PetCreator().array(8);
+    private Pet[] pets = new LiteralPetCreator().array(8);
 
     public static void main(String[] args) {
         CollectionSequence c = new CollectionSequence();

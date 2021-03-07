@@ -1,4 +1,4 @@
-// typeinfo/PetCounter3.java
+// typeinfo/PetCount3.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
@@ -6,15 +6,15 @@
 
 import onjava.Pair;
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
 import java.util.HashMap;
 import java.util.stream.Collectors;
 
-public class PetCounter3 {
+public class PetCount3 {
     public static void main(String[] args) {
         Counter petCount = new Counter();
-        new PetCreator().stream()
+        new LiteralPetCreator().stream()
                 .limit(20)
                 .peek(petCount::count)
                 .forEach(p -> System.out.print(
@@ -25,7 +25,7 @@ public class PetCounter3 {
     static class Counter extends
             HashMap<Class<? extends Pet>, Integer> {
         Counter() {
-            super(PetCreator.ALL_TYPES.stream()
+            super(LiteralPetCreator.ALL_TYPES.stream()
                     .map(type -> Pair.make(type, 0))
                     .collect(
                             Collectors.toMap(Pair::key, Pair::value)));

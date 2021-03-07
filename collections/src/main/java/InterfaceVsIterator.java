@@ -4,7 +4,7 @@
 // Visit http://OnJava8.com for more book information.
 
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -30,7 +30,7 @@ public class InterfaceVsIterator {
     }
 
     public static void main(String[] args) {
-        List<Pet> petList = new PetCreator().list(8);
+        List<Pet> petList = new LiteralPetCreator().list(8);
         Set<Pet> petSet = new HashSet<>(petList);
         Map<String, Pet> petMap = new LinkedHashMap<>();
         String[] names = ("Ralph, Eric, Robin, Lacey, " +

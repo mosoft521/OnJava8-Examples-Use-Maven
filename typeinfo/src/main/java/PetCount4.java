@@ -1,16 +1,16 @@
-// typeinfo/PetCounter4.java
+// typeinfo/PetCount4.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
 
 import onjava.TypeCounter;
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
-public class PetCounter4 {
+public class PetCount4 {
     public static void main(String[] args) {
         TypeCounter counter = new TypeCounter(Pet.class);
-        new PetCreator().stream()
+        new LiteralPetCreator().stream()
                 .limit(20)
                 .peek(counter::count)
                 .forEach(p -> System.out.print(

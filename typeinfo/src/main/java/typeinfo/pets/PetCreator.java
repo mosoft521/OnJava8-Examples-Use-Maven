@@ -1,47 +1,48 @@
-// typeinfo/pets/PetCreator.java
+// typeinfo/pets/Creator.java
 // (c)2021 MindView LLC: see Copyright.txt
 // We make no guarantees that this code is fit for any purpose.
 // Visit http://OnJava8.com for more book information.
-// Using class literals
-// {java typeinfo.pets.PetCreator}
+// Creates random sequences of Pets
 package typeinfo.pets;
 
-import java.util.Arrays;
-import java.util.Collections;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public class PetCreator extends Creator {
-    // No try block needed.
-    public static final
-    List<Class<? extends Pet>> ALL_TYPES =
-            Collections.unmodifiableList(Arrays.asList(
-                    Pet.class, Dog.class, Cat.class, Rodent.class,
-                    Mutt.class, Pug.class, EgyptianMau.class,
-                    Manx.class, Cymric.class, Rat.class,
-                    Mouse.class, Hamster.class));
-    // Types for random creation:
-    private static final
-    List<Class<? extends Pet>> TYPES =
-            ALL_TYPES.subList(
-                    ALL_TYPES.indexOf(Mutt.class),
-                    ALL_TYPES.size());
+public abstract class PetCreator implements Supplier<Pet> {
+    private Random rand = new Random(47);
 
-    public static void main(String[] args) {
-        System.out.println(TYPES);
-        List<Pet> pets = new PetCreator().list(7);
-        System.out.println(pets);
-    }
+    // The different types of Pet to create:
+    public abstract List<Class<? extends Pet>> types();
 
     @Override
-    public List<Class<? extends Pet>> types() {
-        return TYPES;
+    public Pet get() { // Create one random Pet
+        int n = rand.nextInt(types().size());
+        try {
+            return types().get(n)
+                    .getConstructor().newInstance();
+        } catch (InstantiationException |
+                NoSuchMethodException |
+                InvocationTargetException |
+                IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public Stream<Pet> stream() {
+        return Stream.generate(this);
+    }
+
+    public Pet[] array(int size) {
+        return stream().limit(size).toArray(Pet[]::new);
+    }
+
+    public List<Pet> list(int size) {
+        return stream().limit(size)
+                .collect(Collectors.toCollection(ArrayList::new));
     }
 }
-/* Output:
-[class typeinfo.pets.Mutt, class typeinfo.pets.Pug,
-class typeinfo.pets.EgyptianMau, class
-typeinfo.pets.Manx, class typeinfo.pets.Cymric, class
-typeinfo.pets.Rat, class typeinfo.pets.Mouse, class
-typeinfo.pets.Hamster]
-[Rat, Manx, Cymric, Mutt, Pug, Cymric, Pug]
-*/

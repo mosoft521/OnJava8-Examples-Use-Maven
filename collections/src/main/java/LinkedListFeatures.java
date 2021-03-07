@@ -5,7 +5,7 @@
 
 import typeinfo.pets.Hamster;
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 import typeinfo.pets.Rat;
 
 import java.util.LinkedList;
@@ -13,7 +13,7 @@ import java.util.LinkedList;
 public class LinkedListFeatures {
     public static void main(String[] args) {
         LinkedList<Pet> pets =
-                new LinkedList<>(new PetCreator().list(5));
+                new LinkedList<>(new LiteralPetCreator().list(5));
         System.out.println(pets);
         // Identical:
         System.out.println(
@@ -32,9 +32,9 @@ public class LinkedListFeatures {
         System.out.println(pets);
         pets.addFirst(new Rat());
         System.out.println("After addFirst(): " + pets);
-        pets.offer(new PetCreator().get());
+        pets.offer(new LiteralPetCreator().get());
         System.out.println("After offer(): " + pets);
-        pets.add(new PetCreator().get());
+        pets.add(new LiteralPetCreator().get());
         System.out.println("After add(): " + pets);
         pets.addLast(new Hamster());
         System.out.println("After addLast(): " + pets);

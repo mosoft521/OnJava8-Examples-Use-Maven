@@ -7,7 +7,7 @@ import typeinfo.pets.Cymric;
 import typeinfo.pets.Hamster;
 import typeinfo.pets.Mouse;
 import typeinfo.pets.Pet;
-import typeinfo.pets.PetCreator;
+import typeinfo.pets.LiteralPetCreator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,7 +18,7 @@ import java.util.Random;
 public class ListFeatures {
     public static void main(String[] args) {
         Random rand = new Random(47);
-        List<Pet> pets = new PetCreator().list(7);
+        List<Pet> pets = new LiteralPetCreator().list(7);
         System.out.println("1: " + pets);
         Hamster h = new Hamster();
         pets.add(h); // Automatically resizes
@@ -64,7 +64,7 @@ public class ListFeatures {
         pets.clear(); // Remove all elements
         System.out.println("19: " + pets);
         System.out.println("20: " + pets.isEmpty());
-        pets.addAll(new PetCreator().list(4));
+        pets.addAll(new LiteralPetCreator().list(4));
         System.out.println("21: " + pets);
         Object[] o = pets.toArray();
         System.out.println("22: " + o[3]);

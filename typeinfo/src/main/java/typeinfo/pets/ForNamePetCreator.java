@@ -7,7 +7,7 @@ package typeinfo.pets;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ForNamePetCreator extends Creator {
+public class ForNamePetCreator extends PetCreator {
     private static List<Class<? extends Pet>> types =
             new ArrayList<>();
     // Types you want randomly created:
