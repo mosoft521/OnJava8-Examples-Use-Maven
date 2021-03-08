@@ -27,6 +27,7 @@ public class FileToWordsRegexp {
                 .limit(7)
                 .map(w -> w + " ")
                 .forEach(System.out::print);
+        System.out.println();
         fw.stream()
                 .skip(7)
                 .limit(2)
@@ -40,5 +41,6 @@ public class FileToWordsRegexp {
     }
 }
 /* Output:
-Not much of a cheese shop really is it
+Not much of a cheese shop really
+is it
 */
