@@ -9,7 +9,7 @@ public class SpecialCollector {
     public static void
     main(String[] args) throws Exception {
         ArrayList<String> words =
-                FileToWords.stream("Cheese.dat")
+                FileToWords.stream("streams/src/main/java/Cheese.dat")
                         .collect(ArrayList::new,
                                 ArrayList::add,
                                 ArrayList::addAll);
