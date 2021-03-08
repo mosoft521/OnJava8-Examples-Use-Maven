@@ -16,13 +16,14 @@ public class FileToWordsBuilder {
                 .skip(1) // Skip the comment line at the beginning
                 .forEach(line -> {
                     for (String w : line.split("[ .?,]+"))
-                        builder.add(w);
+//                        builder.add(w);//[1]
+                        builder.accept(w);//[2]
                 });
     }
 
     public static void
     main(String[] args) throws Exception {
-        new FileToWordsBuilder("Cheese.dat").stream()
+        new FileToWordsBuilder("streams/src/main/java/Cheese.dat").stream()
                 .limit(7)
                 .map(w -> w + " ")
                 .forEach(System.out::print);
@@ -33,5 +34,6 @@ public class FileToWordsBuilder {
     }
 }
 /* Output:
-Not much of a cheese shop really
+[1] Not much of a cheese shop really
+[2] Not much of a cheese shop really
 */
