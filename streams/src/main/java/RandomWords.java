@@ -22,15 +22,18 @@ public class RandomWords implements Supplier<String> {
                 Files.readAllLines(Paths.get(fname));
         // Skip the first line:
         for (String line : lines.subList(1, lines.size())) {
-            for (String word : line.split("[ .?,]+"))
+            for (String word : line.split("[ .?,]+")) // [1]
+//            for (String word : line.split("\\W+")) // [2]
                 words.add(word.toLowerCase());
         }
+        System.out.println(words);
+        System.out.println("+++");
     }
 
     public static void
     main(String[] args) throws Exception {
         System.out.println(
-                Stream.generate(new RandomWords("Cheese.dat"))
+                Stream.generate(new RandomWords("streams/src/main/java/Cheese.dat"))
                         .limit(10)
                         .collect(Collectors.joining(" ")));
     }
@@ -47,5 +50,10 @@ public class RandomWords implements Supplier<String> {
     }
 }
 /* Output:
-it shop sir the much cheese by conclusion district is
+[1] it shop sir the much cheese by conclusion district is
+[1] 生成list：[not, much, of, a, cheese, shop, really, is, it, finest, in, the, district, sir, and, what, leads, you, to, that, conclusion, well, it's, so, clean, it's, certainly, uncontaminated, by, cheese]
+不一样原因：流不保证顺序
+[2] s district leads much shop to really sir leads s
+[2]生成list：[not, much, of, a, cheese, shop, really, is, it, finest, in, the, district, sir, and, what, leads, you, to, that, conclusion, well, it, s, so, clean, it, s, certainly, uncontaminated, by, cheese]
+是不太一样的，1未用‘来分割
 */
